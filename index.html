@@ -4,31 +4,33 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>Train Schedule</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>Train Schedule</title>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- Bootstrap CDN-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Link to my CSS file -->
+    <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
 
-  <!-- Firebase References -->
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
   <div class="container">
     <br>
-
-    <!-- Jumbotron Title -->
     <div class="jumbotron">
-      <h1 class="text-center">Employee Data Management</h1>
-      <h3 class="text-center">A Comprehensive Directory of Employee Billable Hours</h3>
+      <h1 class="text-center">Homework Station</h1>
+      <h3 class="text-center">Look below for the list of trains and arrival times</h3>
     </div>
 
     <table class="table">
@@ -42,7 +44,7 @@
           <th scope="col" >Minutes Away</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="train-add">
         <tr>
           <td id="trainName"></td>
           <td id="destination"></td>
@@ -73,7 +75,7 @@
 
         <div class="form-group">
           <label for="monthlyRate">Frequency</label>
-          <input type="text" class="form-control" id="Frequency" placeholder="Frequency">
+          <input type="text" class="form-control" id="frequency" placeholder="Frequency">
         </div>
        </form>
        <div class="row">
@@ -81,7 +83,7 @@
         </div>
 
       </div>
-  <script src="assets/javascript/app.js"></script>
+  <script src="./assests/javascript/java.js"></script>
 
 </body>
 </html>
